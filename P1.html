@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expense Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    .balance {
+      font-size: 30px;
+      text-align: center;
+      margin: 10px 0;
+    }
+    .inc-exp-container {
+      display: flex;
+      justify-content: space-between;
+      background: #eee;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+    .income {
+      color: green;
+    }
+    .expense {
+      color: red;
+    }
+    #list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+    .transaction {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px;
+      background: #f9f9f9;
+      margin: 5px 0;
+      border-left: 5px solid;
+    }
+    .transaction.plus {
+      border-color: green;
+    }
+    .transaction.minus {
+      border-color: red;
+    }
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>💰 Expense Tracker</h2>
+    <div>Your Balance</div>
+    <div class="balance" id="balance">$0.00</div>
+
+    <div class="inc-exp-container">
+      <div>
+        <h4>Income</h4>
+        <p class="income" id="money-plus">+$0.00</p>
+      </div>
+      <div>
+        <h4>Expense</h4>
+        <p class="expense" id="money-minus">-$0.00</p>
+      </div>
+    </div>
+
+    <h3>Transaction History</h3>
+    <ul id="list"></ul>
+
+    <h3>Add New Transaction</h3>
+    <form id="form">
+      <input type="text" id="text" placeholder="Description..." required />
+      <input type="number" id="amount" placeholder="Enter amount..." required />
+      <button type="submit">Add Transaction</button>
+    </form>
+  </div>
+
+  <script src="P1.js"></script>
+</body>
+</html>
