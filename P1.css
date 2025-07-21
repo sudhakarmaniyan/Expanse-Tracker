@@ -1,0 +1,104 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: Arial, sans-serif;
+background: #f4f4f4;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+padding: 20px;
+}
+.container {
+background: #fff;
+padding: 30px;
+border-radius: 10px;
+width: 350px;
+}
+h2 {
+text-align: center;
+margin-bottom: 10px;
+}
+h4 {
+margin: 5px 0;
+}
+h1 {
+text-align: center;
+}
+.inc-exp-container {
+background: #eee;
+border-radius: 5px;
+display: flex;
+justify-content: space-between;
+padding: 10px;
+margin: 20px 0;
+}
+.inc-exp-container > div {
+text-align: center;
+}
+.money.plus {
+color: green;
+}
+.money.minus {
+color: red;
+}
+.list {
+list-style: none;
+margin-bottom: 20px;
+max-height: 150px;
+overflow-y: auto;
+}
+.list li {
+background: #f9f9f9;
+box-shadow: 0 0 5px rgba(0,0,0,0.1);
+color: #333;
+display: flex;
+justify-content: space-between;
+position: relative;
+padding: 10px;
+margin: 10px 0;
+border-right: 5px solid;
+}
+.list li.plus {
+border-color: green;
+}
+.list li.minus {
+border-color: red;
+}
+.delete-btn {
+background: #e74c3c;
+border: none;
+color: #fff;
+cursor: pointer;
+padding: 2px 6px;
+font-size: 14px;
+border-radius: 4px;
+}
+.form-control {
+margin-bottom: 10px;
+}
+.form-control label {
+display: block;
+margin-bottom: 5px;
+}
+.form-control input {
+width: 100%;
+padding: 8px;
+border-radius: 4px;
+border: 1px solid #ccc;
+}
+.btn {
+width: 100%;
+background: #3498db;
+color: #fff;
+border: none;
+padding: 10px;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+}
+.btn:hover {
+  background: #2980b9;
+}
